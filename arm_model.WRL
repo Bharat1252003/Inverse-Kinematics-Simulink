@@ -1,0 +1,77 @@
+#VRML V2.0 utf8
+
+#Created with V-Realm Builder v2.0
+#Integrated Data Systems Inc.
+#www.ids-net.com
+
+
+DEF shoulderjoint Transform {
+	children [ 
+	    Shape {
+		    appearance	Appearance {
+			    material	Material {
+			    }
+
+		    }
+
+		    geometry	Sphere {
+			    radius	1
+		    }
+
+	    }
+
+	    DEF upperarm Transform {
+		    translation	2 0 0
+		    rotation	0 0 1  1.5708
+		    children [ 
+			Shape {
+				appearance	Appearance {
+					material	Material {
+					}
+
+				}
+
+				geometry	Cylinder {
+					height	4
+					radius	0.5
+				}
+
+			}
+
+			DEF elbow Transform {
+				translation	0 -2 0
+				children [ 
+				    Shape {
+					    appearance	Appearance {
+						    material	Material {
+						    }
+
+					    }
+
+					    geometry	Sphere {
+					    }
+
+				    }
+
+				    DEF forearm Transform {
+					    translation	0 -2 0
+					    children Shape {
+						    appearance	Appearance {
+							    material	Material {
+							    }
+
+						    }
+
+						    geometry	Cylinder {
+							    height	4
+							    radius	0.5
+						    }
+
+					    }
+				    }
+				]
+			}
+		    ]
+	    }
+	]
+}

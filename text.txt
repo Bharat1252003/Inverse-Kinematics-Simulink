@@ -1,0 +1,7 @@
+upper arm - translation x axis half of height of upper arm
+elbow - translation y axis = -half of height of upper arm
+fore arm - translation x axis half of height of fore arm
+
+shoulder flexion - z
+abduction - y
+internal rotation - x
